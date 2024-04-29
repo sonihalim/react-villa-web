@@ -1,0 +1,22 @@
+.photo-1 {
+    width: 800px;
+    height: 600px;
+    object-fit: cover;
+}
+
+.photo-2 {
+    height: 189.3px;
+    width: 380 px;
+    object-fit: cover;
+}
+
+.calender-popup {
+    bottom: -360px;
+}
+
+
+/* @media only screen and (min-width: 1920) {
+    .photo-2{
+        width: 374px;
+    }
+} */

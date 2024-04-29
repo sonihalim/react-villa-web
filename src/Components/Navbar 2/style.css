@@ -1,0 +1,100 @@
+
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+
+}
+
+
+:root {
+	--mainColor: white;
+	--mainColorLight: #5767aa;
+	--secondaryColor: #db2b39;
+	--textColor: black;
+}
+
+header {
+	display: flex;
+    position: fixed;
+	align-items: center;
+	justify-content: space-between;
+	height: 80px;
+    width: 100%;
+    z-index: 50;
+    top: 0;
+	background-color: var(--mainColor);
+	color: var(--textColor);
+}
+
+nav a {
+	margin: 0 1rem;
+	color: var(--textColor);
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: #964B00;
+    cursor: pointer;
+}
+
+header div,
+nav {
+	display: flex;
+	align-items: center;
+}
+
+.img-logo {
+	width: 10px;
+	height: auto;
+	background-color: red;
+}
+
+@media only screen and (max-width: 1023px) {
+	header nav {
+		position: fixed;
+		top: 80px;
+		right: -1000px;
+		height: 30%;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 1.5rem;
+        overflow-y: hidden;
+        z-index: 1;
+		background-color: white;
+		transition: 1s;
+		
+	}
+
+	header .responsive_nav {
+        transform: translateX(-1000px);
+        overflow-y: hidden; /* Hide vertical scrollbar */
+	}
+	
+	nav a {
+		font-size: 18px;
+	}
+}
+
+
+
+
+@media only screen and (max-width: 640px) {
+	header {
+		height: 50px;
+	}
+
+	header nav {
+		position: fixed;
+		top: 50px;
+		right: -1000px;
+		height: 30%;
+		width: 100%;
+	
+	}
+}
+

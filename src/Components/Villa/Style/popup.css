@@ -1,0 +1,18 @@
+body.active-popup {
+    overflow-y: hidden;
+}
+
+.color-bg-popup {
+    background-color: rgba(35, 42, 49, 0.90);
+}
+
+.original-class {
+    height: 600px;
+    width: 600px;
+}
+
+.thumbnail-class {
+    height: 112px;
+    width: 10px;
+    object-fit: cover;
+}
